@@ -12,6 +12,7 @@ phases:
       - node --version
       - echo "Running npm version..."
       - npm --version
+      - ls 
   build:
     commands:
       - echo "Build phase completed."
