@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "Installing npm..."
+      - npm install
+  pre_build:
+    commands:
+      - echo "Running Node.js version..."
+      - node --version
+      - echo "Running npm version..."
+      - npm --version
+  build:
+    commands:
+      - echo "Build phase completed."
