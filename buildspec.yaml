@@ -13,6 +13,7 @@ phases:
       - echo "Running npm version..."
       - npm --version
       - ls 
+      - cdk bootstrap aws://650251698778/ap-northeast-1
   build:
     commands:
       - echo "Build phase completed."
