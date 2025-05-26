@@ -4,7 +4,8 @@ phases:
     runtime-versions:
       nodejs: 22
     commands:
-      - echo "Installing npm cdk..."
+      - echo "Installing npm..."
+      - npm install
       - npm install -g aws-cdk@2
   pre_build:
     commands:
